@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[4]:
+# In[2]:
 
 
 from mysql.connector import MySQLConnection, Error
@@ -128,8 +128,8 @@ def post_message(user_id,message):
         cursor.execute(query,data)
         conn.commit()
         print("\n***Your message posted***")
-    except Error as e:
-        print(e)
+    except:
+        print("\n***This user id is not registered***")
     finally:
         cursor.close()
 def your_posts(user_id):
@@ -231,7 +231,7 @@ def is_registered(mail):
 
 # update_password(14,"Jaga@1234")
 
-# show_user_detail_by_id(8)
+# show_user_detail_by_id(4)
 
 # search_user_by_name("z")
 
