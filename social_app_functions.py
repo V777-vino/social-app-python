@@ -156,7 +156,7 @@ def delete_post(post_id):
         count = cursor.rowcount
         conn.commit()
         if(count == 1):
-            print("post id:"+str(post_id)+" is deleted!")
+            print("\n***post id:"+str(post_id)+" is deleted!***")
         else:
             print("\n***This post not found***")
     except Error as e:

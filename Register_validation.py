@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[3]:
+# In[1]:
 
 
 import re
 from datetime import datetime
 
 def name_validation(name):
-    if(re.fullmatch('[A-Za-z]{2,25}([A-Za-z]{2,25})?',name)):
+    if(re.fullmatch('[A-Za-z]{1,25}([A-Za-z]{1,25})?',name)):
         return True
     else:
         print("\n***Enter a valid name***")
@@ -52,7 +52,7 @@ def is_valid_date(date_string):
         print("\n***Enter the date 'YYYY-MM-DD' this format!***")
         return False
 # password_validation("U17cs2011@")
-# print(name_validation("john"))
+# print(name_validation("j"))
 # print(age_validation("62"))
 # print(mail_validation("antony@gmail.com"))
 # print(gender_validation('d'))
