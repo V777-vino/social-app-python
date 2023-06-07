@@ -5,6 +5,11 @@ This project is a Python-based social app that connects to a MySQL database. It 
 ## Installation
 
 1. Clone the repository:
+```shell
+https://github.com/V777-vino/social-app-python
+
+2. Install the required dependencies:
+ -2. Install the required dependencies:
 
 
 
